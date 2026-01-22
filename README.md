@@ -6,23 +6,28 @@ https://enjoypudology.com/
 ## GitHub Repository
 https://github.com/SyrineMekni/enjoypudology
 
+Team member: Syrine Mekni
+Grader username: grader
+Grader password: Rightpath@333
+
+
 ## GitHub Auto-Deploy Setup
 This site is deployed automatically from GitHub to my DigitalOcean server using a webhook.
 
 ### How deploy works
 1. Website files are edited and committed to the GitHub repository.
 2. Changes are pushed using:
-   - `git add .`
-   - `git commit -m "message"`
-   - `git push`
+   - git add .
+   - git commit -m "message"
+   - git push
 3. GitHub sends a webhook POST request to:
-   - `http://137.184.3.163:9000/hooks/deploy-enjoypudology`
+   - http://137.184.3.163:9000/hooks/deploy-enjoypudology
 4. The server runs a deploy script that pulls the latest code into:
-   - `/var/www/enjoypudology.com`
+   - /var/www/enjoypudology.com
 5. Refreshing the site shows the live updates.
 
 ### Deploy Demo
-- `Github-Deploy.gif`
+- 'Github-Deploy.gif'
 
 ---
 
@@ -46,7 +51,8 @@ This site is deployed automatically from GitHub to my DigitalOcean server using 
 - Screenshot: 'compress-verify.png'
 
 ### Server Header
-
+Attempted to modify Server header to "CSE135 Server".
+Ubuntu Apache does not allow full override.
 
 
 ### Custom 404 Page
