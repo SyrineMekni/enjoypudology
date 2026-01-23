@@ -8,7 +8,7 @@ https://github.com/SyrineMekni/enjoypudology
 
 Team member: Syrine Mekni
 Grader username: grader
-Grader password: Rightpath@333
+Grader password: (provided in Gradescope submission)
 
 
 ## GitHub Auto-Deploy Setup
@@ -48,11 +48,15 @@ This site is deployed automatically from GitHub to my DigitalOcean server using 
 - Enabled gzip/deflate compression for HTML, CSS, and JavaScript
 - Verified in Chrome DevTools:
   - 'Content-Encoding: gzip'
+-After enabling compression, the HTML response size was reduced and the
+response header included "Content-Encoding: gzip".
 - Screenshot: 'compress-verify.png'
 
 ### Server Header
-Attempted to modify Server header to "CSE135 Server".
-Ubuntu Apache does not allow full override.
+-Installed and configured ModSecurity
+- Modified SecServerSignature to "CSE135 Server"
+- Verified via Chrome DevTools response headers
+- Screenshot: `header-verify.png`
 
 
 ### Custom 404 Page
